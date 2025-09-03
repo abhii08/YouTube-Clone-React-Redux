@@ -24,7 +24,7 @@ const parseData = async(item) => {
     const statistics = item.statistics;
 
     const channelImage = channelResponse.data.items[0].snippet.thumbnails.default.url;
-    const subscriberCount = channelResponse.data.item[0].statistics.subscriberCount;
+    const subscriberCount = channelResponse.data.items[0].statistics.subscriberCount;
 
     return {
         videoId: id, 
