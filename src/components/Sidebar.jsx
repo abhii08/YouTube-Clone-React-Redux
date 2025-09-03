@@ -45,7 +45,7 @@ const Sidebar = () => {
         }
     ]
   return (
-    <div className='w-1/2 bg-[#212121] pr-5 overflow-auto pb-8 h-screen'>
+    <div className='w-1/4 bg-[#212121] pr-5 overflow-auto pb-8 h-screen'>
         <ul className='flex flex-col border-b-2 border-gray-700'>
             {mainLinks.map(({icon,name}) => {
                 return(
