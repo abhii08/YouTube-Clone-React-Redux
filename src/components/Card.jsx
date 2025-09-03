@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function Card({ data }) {
   console.log(data);
   return (
@@ -6,7 +8,9 @@ export default function Card({ data }) {
         <span className="absolute bottom-3 right-3 text-sm bg-gray-900 px-2 py-0.5 z-10">
           {data.videoDuration}
         </span>
+        <Link to={`/watch/${data.videoId}`}>
         <img src={data.videoThumbnail} alt="Thumbnail" className="h-44 w-72" />
+        </Link>
       </div>
       <div className="flex gap-2">
         <div className="min-w-fit">
@@ -25,8 +29,12 @@ export default function Card({ data }) {
               <a href="#" className="hover:text-white">{data.channelInfo.name}</a>
             </div>
             <div>
-              <span>{data.videoViews} views</span>
-              <span>{data.videoAge}</span>
+              <span className="after:contents-['.'] after:mx-1">
+                {data.videoViews} views
+              </span>
+              <span>
+                {data.videoAge}
+              </span>
             </div>
           </div>
         </div>

@@ -5,7 +5,7 @@ import { timeSince } from './timeSince';
 
 const API_KEY = import.meta.env.VITE_YOUTUBE_API_KEY;
 
-export const parseData = async(items) => {
+export const parseRecommendedData = async(items) => {
   try{
     const videoIds = [];
     const channelIds = [];
