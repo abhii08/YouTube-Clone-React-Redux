@@ -49,7 +49,7 @@ A fully functional YouTube clone built with React.js and the YouTube Data API v3
 
 ### Clone and Setup
 ```bash
-git clone <repository-url>
+git clone https://github.com/abhii08/youtube-clone-react-redux.git
 cd youtube-clone
 ```
 
